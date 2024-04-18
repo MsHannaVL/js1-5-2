@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+ <title>Пример 7 с функцией обратного вызова (коллбэком)</title>
+</head>
+<body>
+<script type="text/javascript">
+function callCallbackNTimes (n, callback) {
+  for (let i = 0; i < n; i++) {
+    callback ();
+  }
+}
+function logMessage () {
+  console.log ("Функция обратного вызова была вызвана");
+}
+callCallbackNTimes (5, logMessage);
+</script>
+</body>
+</html>

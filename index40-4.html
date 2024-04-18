@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Пример 4 со стрелочными функциями</title>
+</head>
+<body>
+    <script type="text/javascript">
+        const replaceVowels = str => { 
+            let replacedStr = str.replace(/[aeiouаеёиоуыэюя]/gi, '*'); 
+        return replacedStr;
+}; 
+
+let string = prompt("Введите строку текста:");
+
+let result = replaceVowels(string);
+alert(result);
+    </script>
+</body>
+</html>

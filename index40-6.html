@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Пример 6 с функцией-конструктором</title>
+</head>
+<body>
+    <script type="text/javascript">
+        function Student(name, age) {
+            this.name = name;
+            this.age = age;
+        this.introduce = function () {
+            console.log("Привет, меня зовут " + this.name + " и мне " + this.age + " лет.");
+        };
+        }
+
+let student1 = new Student('Анна', 26);
+
+student1.introduce();
+    </script>
+</body>
+</html>

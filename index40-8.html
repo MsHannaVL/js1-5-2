@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Пример 8 с замыканиями</title>
+</head>
+<body>
+    <script type="text/javascript">
+
+    function createMessenger() {
+        let messageCounter = 0;
+    return {
+    incrementCounter: function() {
+     messageCounter++;
+    },
+    getCounter: function() {
+    return messageCounter;
+    },
+    resetCounter: function() {
+    messageCounter = 0;
+            }
+        };
+    }
+    let messenger = createMessenger();
+    messenger.incrementCounter();
+    messenger.incrementCounter();
+    messenger.incrementCounter();
+    console.log(messenger.getCounter());
+    messenger.resetCounter();
+    console.log(messenger.getCounter());
+</script>
+</body>
+</html>

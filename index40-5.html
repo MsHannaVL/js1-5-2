@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Пример 5 с самовызываемыми функциями</title>
+</head>
+<body>
+    <script type="text/javascript">
+        (function () {
+            function checkPrime (num) {
+                if(num <=1 ) {
+                    console.log ("Число не является простым");
+                    alert("Число не является простым");
+                    return;
+                }
+                for (let i = 2; i <= Math.sqrt(num); i++) {
+                    if (num % i === 0) {
+                        console.log("Число не является простым");
+                        alert("Число не является простым");
+                        return;
+                    }
+                }
+                console.log("Число является простым");
+                alert("Число является простым");
+            }
+let number = prompt("Введите число:");
+
+checkPrime(parseInt(number));
+} ) ();
+    </script>
+</body>
+</html>

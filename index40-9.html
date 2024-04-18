@@ -1,0 +1,26 @@
+<!DOCTYPE HTML> 
+<html> 
+<head> 
+    <title>Пример 9 с рекурсиями </title> 
+</head> 
+<body> 
+    <script type="text/javascript"> 
+        function countDown(n) { 
+            if (n === 0) { 
+                return; 
+            } 
+            console.log(n); 
+            countDown(n - 1); 
+        }
+        var num = prompt("Введите число:");
+
+        var num = parseInt(num);
+
+        if (!isNaN(num)) {
+            countDown(num);
+        } else {
+            console.log("Ошибка. Введено не число.");
+        }
+</script> 
+</body> 
+</html>

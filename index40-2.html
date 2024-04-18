@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Пример 2 с анонимными функциями</title>
+</head>
+<body>
+    <script type="text/javascript">
+        const capitalizeWords = function (str) {
+            const words = str.split(' ');
+            let result = '';
+        for (let i = 0; i < words.length; i++) {
+            const capitalizeWord = words [i][0].toUpperCase() + words[i].slice(1);
+            result += capitalizeWord + ' ';
+        }
+        return result.trim();
+        }
+        let string = prompt ('Введите строку:');
+        let result = capitalizeWords(string);
+        alert(result);
+    </script>
+</body>
+</html>
